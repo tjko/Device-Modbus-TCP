@@ -54,7 +54,7 @@ my $trans_id = 0;
 sub next_trn_id {
     my $self = shift;
     $trans_id++;
-    $trans_id = 1 if $trans_id > 65_535;
+    $trans_id = 1 if $trans_id > 65535;
     return $trans_id;
 }
 
